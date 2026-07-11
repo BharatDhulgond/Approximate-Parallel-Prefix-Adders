@@ -1,0 +1,13 @@
+# Vivado specific ignores
+*.jou
+*.log
+*.str
+*.pb
+*.wdb
+*.wcfg
+.Xil/
+*.cache/
+*.hw/
+*.sim/
+*.runs/
+*.xpr
