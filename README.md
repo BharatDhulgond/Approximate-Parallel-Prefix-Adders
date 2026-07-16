@@ -20,6 +20,23 @@ This work is a hardware implementation and design-space exploration inspired by 
 ## The Approximation Technique
 
 Traditional Parallel Prefix Adders (PPAs) optimize carry generation (G) and propagation (P) using a logarithmic tree of Prefix Operators.
+Standard Prefix Computation
+Every PPA is built from three stages — preprocessing, prefix computation, and postprocessing — around the associative Prefix Operator (PO):
+P = pᵢ · pᵢ₊₁
+G = (gᵢ · pᵢ₊₁) + gᵢ₊₁
+Prefix trees differ in how POs are arranged (fan-out, tree depth, node count), giving each architecture a distinct area/delay signature.
+
+The AxPO Approximation
+In this AxPPA architecture, the prefix logic for a configurable number of $K$ LSBs is stripped away. Instead of computing exact carries, the lower bits utilize an **Approximate Prefix Operator (AxPO)**, which acts as a direct wire passthrough. The exact prefix tree is only instantiated for the remaining Most Significant Bits (MSBs), drastically shortening the critical path and minimizing gate count.
+For a configurable window of K LSBs, the exact PO is replaced with a wire-only AxPO:
+P ≈ pᵢ₊₁
+G ≈ gᵢ₊₁
+This removes the prefix tree entirely from the approximate region — no AND/OR gate logic, only routing — while the remaining W−K MSBs retain a full exact prefix tree, seeded by the carry emerging from the approximate region.
+┌─────────────── W bits ───────────────┐
+ │   Exact Prefix Tree (W−K bits, MSB)   │  AxPO Region (K bits, LSB)  │
+ │        full G/P propagation           │      wire passthrough      │
+ └────────────────────────────────────────────────────────────────────┘
+ K = 0 recovers the exact adder. K = W yields the maximally approximate, minimum-area adder.
 
 In this AxPPA architecture, the prefix logic for a configurable number of $K$ LSBs is stripped away. Instead of computing exact carries, the lower bits utilize an **Approximate Prefix Operator (AxPO)**, which acts as a direct wire passthrough. The exact prefix tree is only instantiated for the remaining Most Significant Bits (MSBs), drastically shortening the critical path and minimizing gate count.
 
