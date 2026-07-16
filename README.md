@@ -68,4 +68,4 @@ To simulate or synthesize the designs in Vivado:
 
 This hardware implementation is inspired by the methodologies discussed in the IEEE Transactions on VLSI Systems paper:
 
-> *AxPPA: Approximate Parallel Prefix Adders* (Rosa et al., 2023).
+> [*AxPPA: Approximate Parallel Prefix Adders* (Rosa et al., 2023)](https://doi.org/10.1109/TVLSI.2022.3218021)
