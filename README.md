@@ -53,7 +53,7 @@ $$\text{MRED} = \frac{1}{n}\sum_{i=1}^{n}\frac{\vert{}measured_{i}-actual_{i}\ve
 | **Brent-Kung** | Minimal baseline nodes; provided moderate delay and area savings. |
 | **Sklansky** | High fan-out nodes; demonstrated moderate LUT and delay improvements. |
 
-*`![MRED Graph]([docs/mred_graph.png](https://github.com/BharatDhulgond/Approximate-Parallel-Prefix-Adders/blob/main/docs/mred_graph.png?raw=true))`*
+*`![MRED Graph](https://github.com/BharatDhulgond/Approximate-Parallel-Prefix-Adders/blob/main/docs/mred_graph.png?raw=true)`*
 
 ## How to Use
 
