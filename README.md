@@ -53,7 +53,7 @@ $$\text{MRED} = \frac{1}{n}\sum_{i=1}^{n}\frac{\vert{}measured_{i}-actual_{i}\ve
 | **Brent-Kung** | Minimal baseline nodes; provided moderate delay and area savings. |
 | **Sklansky** | High fan-out nodes; demonstrated moderate LUT and delay improvements. |
 
-*(Note: You can add the MRED vs. LUT savings graphs from your presentation here as visual proof by dropping the image files into the `docs` folder and linking them like this: `![MRED Graph](docs/mred_graph.png)`).*
+*`![MRED Graph](docs/mred_graph.png)`*
 
 ## How to Use
 
