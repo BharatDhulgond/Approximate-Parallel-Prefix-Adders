@@ -2,9 +2,9 @@
 
 **Configurable-accuracy parallel prefix adders in Verilog — trading arithmetic precision for area, delay, and power in error-resilient hardware accelerators.**
 
-[![Vivado](https://img.shields.io/badge/Tool-Xilinx%20Vivado-blue)]()
-[![Target](https://img.shields.io/badge/Target-Artix--7%20(xc7a35t)-informational)]()
-[![Language](https://img.shields.io/badge/HDL-Verilog-orange)]()
+![Vivado](https://img.shields.io/badge/Tool-Xilinx%20Vivado-blue)
+![Target](https://img.shields.io/badge/Target-Artix--7%20(xc7a35t)-informational)
+![Language](https://img.shields.io/badge/HDL-Verilog-orange)
 
 ---
 
