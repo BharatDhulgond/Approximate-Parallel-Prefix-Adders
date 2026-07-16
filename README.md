@@ -189,4 +189,4 @@ kogge_stone_axppa #(
 
 ## Authors
 
-Bharat Kumar · Vinay P Ramesh · R Vaikunth · Surya Sumeet Singh · Pravin Kumar V · Shudharshan A · Harshit Krishna R
+Bharat Kumar · Vinay P Ramesh · R Vaikunth · Harshit Krishna R · Pravin Kumar V · Shudharshan A · Surya Sumeet Singh
