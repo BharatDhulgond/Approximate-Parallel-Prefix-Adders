@@ -3,8 +3,6 @@
 
 ## Overview
 
-Overview
-
 Parallel Prefix Adders (PPAs) — Brent-Kung, Kogge-Stone, Ladner-Fischer, and Sklansky — are the fastest known adder topologies, using logarithmic-depth carry trees to minimize critical-path delay. This comes at a fixed cost: every bit position, regardless of significance, receives full exact carry-propagate logic.
 
 AxPPA challenges that assumption. In error-tolerant workloads (ML inference, DSP, image/video processing), errors in the Least Significant Bits (LSBs) contribute negligibly to overall output magnitude. This project introduces an Approximate Prefix Operator (AxPO) that replaces exact carry logic in the K least significant bits with a direct wire passthrough — eliminating an entire region of the prefix tree — while preserving an exact prefix computation for the remaining W−K most significant bits.
