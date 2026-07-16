@@ -9,7 +9,7 @@ AxPPA challenges that assumption. In error-tolerant workloads (ML inference, DSP
 
 The result: adders that are smaller, faster, and lower-power than their exact counterparts, with accuracy loss that is bounded, configurable, and quantifiable via standard error metrics.
 
-This work is a hardware implementation and design-space exploration inspired by the IEEE TVLSI paper "AxPPA: Approximate Parallel Prefix Adders" (Rosa et al., 2023).
+This work is a hardware implementation and design-space exploration inspired by the IEEE TVLSI paper > [*AxPPA: Approximate Parallel Prefix Adders* (Rosa et al., 2023)](https://doi.org/10.1109/TVLSI.2022.3218021).
 ## Key Highlights
 
 * **Architectures Implemented:** Brent-Kung, Kogge-Stone, Ladner-Fischer, and Sklansky parallel prefix trees.
