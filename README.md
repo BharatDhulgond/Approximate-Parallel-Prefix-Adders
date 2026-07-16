@@ -3,10 +3,15 @@
 
 ## Overview
 
-This repository contains the RTL implementation and synthesis analysis of **Approximate Parallel Prefix Adders (AxPPA)**. The project explores the power-performance-area (PPA) trade-offs in digital arithmetic by systematically replacing exact carry-propagate logic with wire-only Approximate Prefix Operators (AxPOs) in the Least Significant Bits (LSBs).
+Overview
 
-This design strategy is highly effective for error-resilient applications such as machine learning inference, DSP, and image processing, where strict arithmetic accuracy can be traded for significant hardware efficiency.
+Parallel Prefix Adders (PPAs) — Brent-Kung, Kogge-Stone, Ladner-Fischer, and Sklansky — are the fastest known adder topologies, using logarithmic-depth carry trees to minimize critical-path delay. This comes at a fixed cost: every bit position, regardless of significance, receives full exact carry-propagate logic.
 
+AxPPA challenges that assumption. In error-tolerant workloads (ML inference, DSP, image/video processing), errors in the Least Significant Bits (LSBs) contribute negligibly to overall output magnitude. This project introduces an Approximate Prefix Operator (AxPO) that replaces exact carry logic in the K least significant bits with a direct wire passthrough — eliminating an entire region of the prefix tree — while preserving an exact prefix computation for the remaining W−K most significant bits.
+
+The result: adders that are smaller, faster, and lower-power than their exact counterparts, with accuracy loss that is bounded, configurable, and quantifiable via standard error metrics.
+
+This work is a hardware implementation and design-space exploration inspired by the IEEE TVLSI paper "AxPPA: Approximate Parallel Prefix Adders" (Rosa et al., 2023).
 ## Key Highlights
 
 * **Architectures Implemented:** Brent-Kung, Kogge-Stone, Ladner-Fischer, and Sklansky parallel prefix trees.
