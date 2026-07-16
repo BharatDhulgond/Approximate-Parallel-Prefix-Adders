@@ -16,7 +16,7 @@ Parallel Prefix Adders (PPAs) — Brent-Kung, Kogge-Stone, Ladner-Fischer, and S
 
 The result: adders that are smaller, faster, and lower-power than their exact counterparts, with accuracy loss that is bounded, configurable, and quantifiable via standard error metrics.
 
-This work is a hardware implementation and design-space exploration inspired by the IEEE TVLSI paper *"AxPPA: Approximate Parallel Prefix Adders"* (Rosa et al., 2023).
+This work is a hardware implementation and design-space exploration inspired by the IEEE TVLSI paper [*AxPPA: Approximate Parallel Prefix Adders* (Rosa et al., 2023)](docs/AxPPA_Approximate_Parallel_Prefix_Adders.pdf)
 
 ---
 
